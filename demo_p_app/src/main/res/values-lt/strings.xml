@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Palmių mėginys</string>
+    <string name="activity_example_model_copy_success">Modelio failas sėkmingai nukopijuotas.</string>
+    <string name="activity_example_camera_not_turn_on">Fotoaparatas neįjungtas</string>
+    <string name="activity_example_algo_not_init">Algoritmas nėra inicijuotas</string>
+    <string name="activity_example_btn_compare">Palyginimas</string>
+    <string name="activity_example_btn_cancel">Atšaukti</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath arba destPath Vaizdo kelias negali būti tuščias!</string>
+    <string name="activity_example_no_image">RGB srcPath nerasta jokių vaizdų</string>
+    <string name="activity_example_extra_feature_failed">Nepavyko išgauti funkcijų reikšmių iš vaizdų ir funkcijų reikšmių nepavyko palyginti</string>
+    <string name="activity_example_license_no_exist">Licencijos failo nėra</string>
+    <string name="activity_example_success">pavykti</string>
+    <string name="activity_example_failure">Nepavyksta</string>
+    <string name="activity_example_algo_enable_first">Pirmiausia įjunkite algoritmą!</string>
+    <string name="activity_example_stop_capture_failed">Nepavyko sustabdyti fiksavimo, pakartoti:</string>
+    <string name="activity_example_stop_capture_success">Sustabdyti fiksavimo komandą pavyksta</string>
+    <string name="activity_example_capture_continuously_failed">Nepavyko nuolat užfiksuoti komandos, ret:</string>
+    <string name="activity_example_capture_one_failed">Nepavyksta užfiksuoti komandos, pakartokite:</string>
+    <string name="activity_example_algo_already_enable">Algoritmas įjungtas!</string>
+    <string name="activity_example_initializing">Algoritmas inicijuojamas!</string>
+    <string name="activity_example_btn_confirm">Ar tikrai</string>
+    <string name="activity_example_please_input_path">Įveskite tikslų kelią!</string>
+    <string name="activity_example_algo_enable_success">Algoritmas įgalino sėkmę</string>
+    <string name="activity_example_algo_enable_failed">Jei algoritmo įjungti nepavyksta, pakartokite:</string>
+    <string name="activity_example_capture_timeout">Baigėsi fiksavimo skirtasis laikas</string>
+    <string name="activity_example_camera_is_opened">Fotoaparatas įjungtas</string>
+    <string name="activity_example_stream_create_failed">Nepavyko sukurti srauto</string>
+    <string name="open_device">Atidarykite įrenginį</string>
+    <string name="stream_mode">Srauto režimas:</string>
+    <string name="open_stream">Atviras srautas</string>
+    <string name="enable_algorithm">Įgalinti algoritmą</string>
+    <string name="capture_once_src">Užfiksuokite vieną kartą SRC</string>
+    <string name="capture_once_dest">Užfiksuokite vieną kartą dest</string>
+    <string name="continuous_capture">Nuolatinis fiksavimas</string>
+    <string name="stop_capture">Sustabdyti fiksavimą</string>
+    <string name="verify">Patikrinti</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>IR</item>
+        <item>GYLIS</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

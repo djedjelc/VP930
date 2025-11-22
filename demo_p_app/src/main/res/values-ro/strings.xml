@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Eșantion de palmier</string>
+    <string name="activity_example_model_copy_success">Fișierul model este copiat cu succes.</string>
+    <string name="activity_example_camera_not_turn_on">Camera nu este pornită</string>
+    <string name="activity_example_algo_not_init">Algoritmul nu este inițializat</string>
+    <string name="activity_example_btn_compare">Comparație</string>
+    <string name="activity_example_btn_cancel">Anula</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath sau destPath Calea imaginii nu poate fi goală!</string>
+    <string name="activity_example_no_image">Nu au fost găsite imagini sub RGB srcPath</string>
+    <string name="activity_example_extra_feature_failed">Nu s-au putut extrage valorile caracteristicilor din imagini și valorile caracteristicilor nu au putut fi comparate</string>
+    <string name="activity_example_license_no_exist">Fișierul de licență nu există</string>
+    <string name="activity_example_success">reuși</string>
+    <string name="activity_example_failure">eșua</string>
+    <string name="activity_example_algo_enable_first">Vă rugăm să activați mai întâi algoritmul!</string>
+    <string name="activity_example_stop_capture_failed">Nu s-a reușit să se oprească fixarea, ret:</string>
+    <string name="activity_example_stop_capture_success">Comanda de oprire a alinierii reușește</string>
+    <string name="activity_example_capture_continuously_failed">Nu s-a reușit să păstrați comanda de fixare, ret:</string>
+    <string name="activity_example_capture_one_failed">Nu reușește să fixezi o comandă, ret:</string>
+    <string name="activity_example_algo_already_enable">Algoritmul este activat!</string>
+    <string name="activity_example_initializing">Algoritmul se inițializează!</string>
+    <string name="activity_example_btn_confirm">Eşti sigur</string>
+    <string name="activity_example_please_input_path">Vă rugăm să introduceți calea exactă!</string>
+    <string name="activity_example_algo_enable_success">Algoritmul a permis succesul</string>
+    <string name="activity_example_algo_enable_failed">Dacă algoritmul nu poate fi activat, ret:</string>
+    <string name="activity_example_capture_timeout">Captura a expirat</string>
+    <string name="activity_example_camera_is_opened">Camera este pornită</string>
+    <string name="activity_example_stream_create_failed">Nu s-a reușit să se creeze un flux</string>
+    <string name="open_device">Deschide dispozitivul</string>
+    <string name="stream_mode">Mod flux:</string>
+    <string name="open_stream">Deschide fluxul</string>
+    <string name="enable_algorithm">Activați algoritmul</string>
+    <string name="capture_once_src">captură o dată src</string>
+    <string name="capture_once_dest">Capturați o dată dest</string>
+    <string name="continuous_capture">Captură continuă</string>
+    <string name="stop_capture">Opriți captura</string>
+    <string name="verify">Verifica</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>ȘI</item>
+        <item>ADÂNCIME</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Vorm van de palm</string>
+    <string name="activity_example_model_copy_success">Modelbestand succesvol gekopieerd.</string>
+    <string name="activity_example_camera_not_turn_on">De camera niet inschakelen</string>
+    <string name="activity_example_algo_not_init">Het algoritme is niet geinitialiseerd</string>
+    <string name="activity_example_btn_compare">vergelijking</string>
+    <string name="activity_example_btn_cancel">vervallen</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath of destPath het afbeeldingspad mag niet leeg zijn!</string>
+    <string name="activity_example_no_image">Er zijn geen afbeeldingen gevonden onder path of RGB srcPath</string>
+    <string name="activity_example_extra_feature_failed">Het extraheren van eigenwaarden uit foto\'s mislukt en kan niet worden vergeleken met eigenwaarden</string>
+    <string name="activity_example_license_no_exist">De vergunning bestaat niet</string>
+    <string name="activity_example_success">succes</string>
+    <string name="activity_example_failure">mislukking</string>
+    <string name="activity_example_algo_enable_first">Maak eerst het algoritme!</string>
+    <string name="activity_example_stop_capture_failed">Stop snap instructie mislukt, ret:</string>
+    <string name="activity_example_stop_capture_success">Stop de snap instructie met succes</string>
+    <string name="activity_example_capture_continuously_failed">Continue snap instructie mislukt, ret:</string>
+    <string name="activity_example_capture_one_failed">Snap een instructie mislukt, ret:</string>
+    <string name="activity_example_algo_already_enable">Het algoritme heeft het mogelijk gemaakt!</string>
+    <string name="activity_example_initializing">Het algoritme wordt geinitialiseerd!</string>
+    <string name="activity_example_btn_confirm">omschrijving</string>
+    <string name="activity_example_please_input_path">Gelieve het pad te bevestigen!</string>
+    <string name="activity_example_algo_enable_success">Algoritmes maken succes</string>
+    <string name="activity_example_algo_enable_failed">Algoritme maakt falen,ret:</string>
+    <string name="activity_example_capture_timeout">Leg de timeout vast</string>
+    <string name="activity_example_camera_is_opened">De camera is ingeschakeld</string>
+    <string name="activity_example_stream_create_failed">Het creeren van een stroom mislukt</string>
+    <string name="open_device">Open het apparaat</string>
+    <string name="stream_mode">Stroommodus:</string>
+    <string name="open_stream">Open de stroom</string>
+    <string name="enable_algorithm">Maak het algoritme</string>
+    <string name="capture_once_src">Een keer een SRC vastleggen</string>
+    <string name="capture_once_dest">totaal</string>
+    <string name="continuous_capture">Continu schieten</string>
+    <string name="stop_capture">Stoppen met vangen</string>
+    <string name="verify">controle</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>EN</item>
+        <item>diepte</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

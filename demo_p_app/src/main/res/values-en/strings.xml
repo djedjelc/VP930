@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Palm Sample</string>
+    <string name="activity_example_model_copy_success">The model file is copied successfully.</string>
+    <string name="activity_example_camera_not_turn_on">The camera is not turned on.</string>
+    <string name="activity_example_algo_not_init">The algorithm has not been initialized</string>
+    <string name="activity_example_btn_compare">Comparison</string>
+    <string name="activity_example_btn_cancel">Cancel</string>
+    <string name="activity_example_image_path_is_empty">The RGB srcPath or destPath image path cannot be empty!</string>
+    <string name="activity_example_no_image">No pictures were found under the path of RGB srcPath</string>
+    <string name="activity_example_extra_feature_failed">The extraction of feature values from the picture failed and the feature values could not be compared</string>
+    <string name="activity_example_license_no_exist">The license file does not exist</string>
+    <string name="activity_example_success">Success</string>
+    <string name="activity_example_failure">Failure</string>
+    <string name="activity_example_algo_enable_first">Please enable the algorithm first!</string>
+    <string name="activity_example_stop_capture_failed">The stop snapshot command failed. ret:</string>
+    <string name="activity_example_stop_capture_success">The command to stop the snapshot was successful</string>
+    <string name="activity_example_capture_continuously_failed">The continuous snapshot command failed. ret:</string>
+    <string name="activity_example_capture_one_failed">Capture a failed command, ret:</string>
+    <string name="activity_example_algo_already_enable">The algorithm is enabled!</string>
+    <string name="activity_example_initializing">The algorithm is being initialized!</string>
+    <string name="activity_example_btn_confirm">Confirm</string>
+    <string name="activity_example_please_input_path">Please enter the exact path!</string>
+    <string name="activity_example_algo_enable_success">The algorithm enables success</string>
+    <string name="activity_example_algo_enable_failed">Algorithm enable failed,ret:</string>
+    <string name="activity_example_capture_timeout">Snapshot timeout</string>
+    <string name="activity_example_camera_is_opened">The camera is turned on.</string>
+    <string name="activity_example_stream_create_failed">Failed to create the stream</string>
+    <string name="open_device">Open device</string>
+    <string name="stream_mode">Stream mode：</string>
+    <string name="open_stream">Open stream</string>
+    <string name="enable_algorithm">Enable algorithm</string>
+    <string name="capture_once_src">Capture once src</string>
+    <string name="capture_once_dest">Capture once dest</string>
+    <string name="continuous_capture">Continuous capture</string>
+    <string name="stop_capture">Stop capture</string>
+    <string name="verify">Verify</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>AND</item>
+        <item>DEPTH</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

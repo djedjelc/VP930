@@ -1,0 +1,244 @@
+package com.zenty.tpe.palm;
+
+import android.content.Context;
+import android.util.Log;
+
+import com.api.stream.Device;
+import com.api.stream.IDevice;
+import com.api.stream.IOpenCallback;
+import com.api.stream.manager.DtUsbDevice;
+import com.api.stream.manager.DtUsbManager;
+import com.api.stream.manager.UsbMapTable;
+import com.api.stream.veinshine.IVeinshine;
+
+import java.util.Map;
+
+/**
+ * Gestionnaire centralisé pour le terminal VP930Pro
+ * Singleton pour gérer l'instance IDevice
+ */
+public class PalmDeviceManager {
+    private static final String TAG = "PalmDeviceManager";
+    private static PalmDeviceManager instance;
+    
+    private IDevice device;
+    private boolean isDeviceOpen = false;
+    private boolean isAlgorithmEnabled = false;
+    private DeviceStateCallback deviceStateCallback;
+    
+    private PalmDeviceManager() {}
+    
+    public static synchronized PalmDeviceManager getInstance() {
+        if (instance == null) {
+            instance = new PalmDeviceManager();
+        }
+        return instance;
+    }
+    
+    /**
+     * Initialise le device VP930Pro
+     */
+    public void initialize(Context context, DeviceStateCallback callback) {
+        this.deviceStateCallback = callback;
+        
+        Device.create(context, new Device.DeviceListener() {
+            @Override
+            public void onDeviceCreatedSuccess(IDevice device, int deviceIndex, 
+                                              Map<Long, IDevice> runningDevice, 
+                                              UsbMapTable.DeviceType deviceType) {
+                Log.i(TAG, "Device created: " + deviceType + ", index: " + deviceIndex);
+                PalmDeviceManager.this.device = device;
+                if (deviceStateCallback != null) {
+                    deviceStateCallback.onDeviceCreated();
+                }
+            }
+
+            @Override
+            public void onDeviceCreateFailed(IDevice device) {
+                Log.e(TAG, "Device creation failed");
+                if (deviceStateCallback != null) {
+                    deviceStateCallback.onDeviceError("Échec de création du device");
+                }
+            }
+
+            @Override
+            public void onDeviceDestroy(IDevice device) {
+                Log.i(TAG, "Device destroyed");
+                PalmDeviceManager.this.device = null;
+                isDeviceOpen = false;
+                isAlgorithmEnabled = false;
+                if (deviceStateCallback != null) {
+                    deviceStateCallback.onDeviceDestroyed();
+                }
+            }
+        }, new DtUsbManager.DeviceStateListener() {
+            @Override
+            public void onDevicePermissionGranted(DtUsbDevice dtUsbDevice) {
+                Log.d(TAG, "USB permission granted");
+            }
+
+            @Override
+            public void onDevicePermissionDenied(DtUsbDevice dtUsbDevice) {
+                Log.e(TAG, "USB permission denied");
+                if (deviceStateCallback != null) {
+                    deviceStateCallback.onDeviceError("Permission USB refusée");
+                }
+            }
+
+            @Override
+            public void onAttached(DtUsbDevice dtUsbDevice) {
+                Log.i(TAG, "Device attached");
+                if (deviceStateCallback != null) {
+                    deviceStateCallback.onDeviceAttached();
+                }
+            }
+
+            @Override
+            public void onDetached(DtUsbDevice dtUsbDevice) {
+                Log.i(TAG, "Device detached");
+                isDeviceOpen = false;
+                isAlgorithmEnabled = false;
+                if (deviceStateCallback != null) {
+                    deviceStateCallback.onDeviceDetached();
+                }
+            }
+        });
+    }
+    
+    /**
+     * Ouvre le device
+     */
+    public void openDevice(final OpenCallback callback) {
+        if (device == null) {
+            Log.e(TAG, "Device not created yet");
+            if (callback != null) {
+                callback.onOpenFailed("Device non initialisé");
+            }
+            return;
+        }
+        
+        device.open(new IOpenCallback() {
+            @Override
+            public void onDownloadPrepare() {
+                Log.d(TAG, "Download prepare");
+            }
+
+            @Override
+            public void onDownloadProgress(int progress) {
+                Log.d(TAG, "Download progress: " + progress);
+            }
+
+            @Override
+            public void onDownloadSuccess() {
+                Log.d(TAG, "Download success");
+            }
+
+            @Override
+            public void onOpenSuccess() {
+                Log.i(TAG, "Device opened successfully");
+                isDeviceOpen = true;
+                if (callback != null) {
+                    callback.onOpenSuccess();
+                }
+            }
+
+            @Override
+            public void onOpenFail(int errorCode) {
+                Log.e(TAG, "Device open failed: " + errorCode);
+                isDeviceOpen = false;
+                if (callback != null) {
+                    callback.onOpenFailed("Erreur: " + Integer.toHexString(errorCode));
+                }
+            }
+        });
+    }
+    
+    /**
+     * Active le module d'algorithme palmaire
+     */
+    public void enableAlgorithm(String modelPath, final AlgorithmCallback callback) {
+        if (!isDeviceOpen) {
+            Log.e(TAG, "Device not opened");
+            if (callback != null) {
+                callback.onAlgorithmEnableFailed("Device non ouvert");
+            }
+            return;
+        }
+        
+        if (device instanceof IVeinshine) {
+            IVeinshine veinshine = (IVeinshine) device;
+            
+            // Exécuter dans un thread séparé car c'est une opération bloquante
+            new Thread(() -> {
+                int ret = veinshine.enableDimPalm(modelPath);
+                if (ret == 0) {
+                    Log.i(TAG, "Algorithm enabled successfully");
+                    Log.d(TAG, "Algorithm version: " + veinshine.getAlgorithmVersion());
+                    isAlgorithmEnabled = true;
+                    if (callback != null) {
+                        callback.onAlgorithmEnabled();
+                    }
+                } else {
+                    Log.e(TAG, "Algorithm enable failed: " + ret);
+                    isAlgorithmEnabled = false;
+                    if (callback != null) {
+                        callback.onAlgorithmEnableFailed("Erreur: " + Integer.toHexString(ret));
+                    }
+                }
+            }).start();
+        } else {
+            if (callback != null) {
+                callback.onAlgorithmEnableFailed("Device incompatible");
+            }
+        }
+    }
+    
+    /**
+     * Ferme le device
+     */
+    public void closeDevice() {
+        if (device != null) {
+            try {
+                device.close();
+                Log.i(TAG, "Device closed");
+            } catch (Exception e) {
+                Log.e(TAG, "Error closing device", e);
+            }
+        }
+        isDeviceOpen = false;
+        isAlgorithmEnabled = false;
+    }
+    
+    // Getters
+    public IDevice getDevice() {
+        return device;
+    }
+    
+    public boolean isDeviceOpen() {
+        return isDeviceOpen;
+    }
+    
+    public boolean isAlgorithmEnabled() {
+        return isAlgorithmEnabled;
+    }
+    
+    /** Callbacks */
+    
+    public interface DeviceStateCallback {
+        void onDeviceCreated();
+        void onDeviceDestroyed();
+        void onDeviceAttached();
+        void onDeviceDetached();
+        void onDeviceError(String error);
+    }
+    
+    public interface OpenCallback {
+        void onOpenSuccess();
+        void onOpenFailed(String error);
+    }
+    
+    public interface AlgorithmCallback {
+        void onAlgorithmEnabled();
+        void onAlgorithmEnableFailed(String error);
+    }
+}

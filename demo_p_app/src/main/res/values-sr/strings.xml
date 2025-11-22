@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Палм Узорак</string>
+    <string name="activity_example_model_copy_success">Датотека модела се успешно копира.</string>
+    <string name="activity_example_camera_not_turn_on">Камера није укључена</string>
+    <string name="activity_example_algo_not_init">Алгоритам није иницијализован</string>
+    <string name="activity_example_btn_compare">Поређења</string>
+    <string name="activity_example_btn_cancel">Откажи</string>
+    <string name="activity_example_image_path_is_empty">РГБ срцПатх или ДестПатх Пут слика не може бити празан!</string>
+    <string name="activity_example_no_image">Нема слика су пронађени под РГБ срцПатх</string>
+    <string name="activity_example_extra_feature_failed">Фаилед то еxтрацт феатуре валуес фром имагес, анд тхе феатуре валуес цоулдн\'т бе цомпаре</string>
+    <string name="activity_example_license_no_exist">Датотека лиценце не постоји</string>
+    <string name="activity_example_success">Успети</string>
+    <string name="activity_example_failure">садржина</string>
+    <string name="activity_example_algo_enable_first">Молимо Вас да прво омогућите алгоритам!</string>
+    <string name="activity_example_stop_capture_failed">Фаилед то стоп снаппинг, рет:</string>
+    <string name="activity_example_stop_capture_success">Команда стоп снаппинг успева</string>
+    <string name="activity_example_capture_continuously_failed">Фаилед то кееп снаппинг цомманд, рет:</string>
+    <string name="activity_example_capture_one_failed">Не успе да снап команду, рет:</string>
+    <string name="activity_example_algo_already_enable">Алгоритам је омогућен!</string>
+    <string name="activity_example_initializing">Алгоритам се иницијализира!</string>
+    <string name="activity_example_btn_confirm">Јеси сигуран</string>
+    <string name="activity_example_please_input_path">Молимо Вас да унесете тачан пут!</string>
+    <string name="activity_example_algo_enable_success">Алгоритам је омогућио успех</string>
+    <string name="activity_example_algo_enable_failed">Ако алгоритам не буде омогућен, рет:</string>
+    <string name="activity_example_capture_timeout">Снимање је истекло</string>
+    <string name="activity_example_camera_is_opened">Камера је укључена</string>
+    <string name="activity_example_stream_create_failed">Није успело да створи проток</string>
+    <string name="open_device">Отвори уређај</string>
+    <string name="stream_mode">Режим стреам:</string>
+    <string name="open_stream">Отворени ток</string>
+    <string name="enable_algorithm">Омогући алгоритам</string>
+    <string name="capture_once_src">Ухватите једном СРЦ</string>
+    <string name="capture_once_dest">Ухвати једном дест</string>
+    <string name="continuous_capture">Континуирано снимање</string>
+    <string name="stop_capture">Зауставите снимање</string>
+    <string name="verify">Проверите</string>
+
+    <string-array name="stream_type">
+        <item>РГБ</item>
+        <item>И</item>
+        <item>ДУБИНА</item>
+        <item>ОМИЉЕНО</item>
+        <item>РГБИР</item>
+        <item>РГБД_ИР</item>
+        <item>ДЕПТХ_ИР</item>
+    </string-array>
+</resources>

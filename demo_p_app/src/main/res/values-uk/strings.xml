@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Зразок долоні</string>
+    <string name="activity_example_model_copy_success">Файл моделі успішно скопійовано.</string>
+    <string name="activity_example_camera_not_turn_on">Камеру не ввімкнено</string>
+    <string name="activity_example_algo_not_init">Алгоритм не ініціалізується</string>
+    <string name="activity_example_btn_compare">Порівняння</string>
+    <string name="activity_example_btn_cancel">Скасувати</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath або destPath Шлях до зображення не може бути порожнім!</string>
+    <string name="activity_example_no_image">Під RGB srcPath не знайдено зображень</string>
+    <string name="activity_example_extra_feature_failed">Не вдалося витягнути значення функцій із зображень, і не вдалося порівняти значення функцій</string>
+    <string name="activity_example_license_no_exist">Файлу ліцензії не існує</string>
+    <string name="activity_example_success">Успіху</string>
+    <string name="activity_example_failure">Не</string>
+    <string name="activity_example_algo_enable_first">Будь ласка, спочатку увімкніть алгоритм!</string>
+    <string name="activity_example_stop_capture_failed">Не вдалося зупинити клацання, повторно:</string>
+    <string name="activity_example_stop_capture_success">Команда «Зупинити прив\'язку» виконана успішно</string>
+    <string name="activity_example_capture_continuously_failed">Не вдалося виконати команду snap, ret:</string>
+    <string name="activity_example_capture_one_failed">Якщо не вдасться виконати команду, повторіть:</string>
+    <string name="activity_example_algo_already_enable">Алгоритм увімкнено!</string>
+    <string name="activity_example_initializing">Алгоритм ініціалізується!</string>
+    <string name="activity_example_btn_confirm">Ти впевнений</string>
+    <string name="activity_example_please_input_path">Будь ласка, введіть точний шлях!</string>
+    <string name="activity_example_algo_enable_success">Алгоритм забезпечив успіх</string>
+    <string name="activity_example_algo_enable_failed">Якщо алгоритм не включився, повторіть помилку:</string>
+    <string name="activity_example_capture_timeout">Час очікування захоплення минув</string>
+    <string name="activity_example_camera_is_opened">Камеру ввімкнено</string>
+    <string name="activity_example_stream_create_failed">Не вдалося створити ланцюжок</string>
+    <string name="open_device">Відкритий пристрій</string>
+    <string name="stream_mode">Режим трансляції:</string>
+    <string name="open_stream">Відкрита трансляція</string>
+    <string name="enable_algorithm">Увімкнути алгоритм</string>
+    <string name="capture_once_src">Захоплення один раз src</string>
+    <string name="capture_once_dest">Спіймати один раз dest</string>
+    <string name="continuous_capture">Безперервна зйомка</string>
+    <string name="stop_capture">Зупинити захоплення</string>
+    <string name="verify">Перевірити</string>
+
+    <string-array name="stream_type">
+        <item>Колірний підсвітлення</item>
+        <item>І</item>
+        <item>ГЛИБИНА</item>
+        <item>RGBD</item>
+        <item>РГБІР</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

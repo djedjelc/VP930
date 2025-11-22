@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">手のひらサンプル</string>
+    <string name="activity_example_model_copy_success">モデルファイルが正常にコピーされます。</string>
+    <string name="activity_example_camera_not_turn_on">カメラをつけていません</string>
+    <string name="activity_example_algo_not_init">アルゴリズムは初期化されていません</string>
+    <string name="activity_example_btn_compare">照合します</string>
+    <string name="activity_example_btn_cancel">取り消します</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath or destPath画像パスは空ではいけません!</string>
+    <string name="activity_example_no_image">RGB srcPathの経路では画像は見つかりませんでした</string>
+    <string name="activity_example_extra_feature_failed">画像から特徴値を抽出するのに失敗し、照合できません。</string>
+    <string name="activity_example_license_no_exist">ライセンスファイルは存在しません</string>
+    <string name="activity_example_success">成功です</string>
+    <string name="activity_example_failure">失敗です</string>
+    <string name="activity_example_algo_enable_first">アルゴリズムを先にお願いします!</string>
+    <string name="activity_example_stop_capture_failed">スナップ停止命令失敗ですret:</string>
+    <string name="activity_example_stop_capture_success">スナップ停止指令成功です</string>
+    <string name="activity_example_capture_continuously_failed">継続スナップ命令失敗しますret:</string>
+    <string name="activity_example_capture_one_failed">失敗しましたret:</string>
+    <string name="activity_example_algo_already_enable">アルゴリズムは可能です!</string>
+    <string name="activity_example_initializing">アルゴリズムが初期化しています!</string>
+    <string name="activity_example_btn_confirm">確定です</string>
+    <string name="activity_example_please_input_path">確認経路をお願いします!</string>
+    <string name="activity_example_algo_enable_success">アルゴリズムは成功しました</string>
+    <string name="activity_example_algo_enable_failed">アルゴリズムは失敗しますret:</string>
+    <string name="activity_example_capture_timeout">スナップタイムアウトです</string>
+    <string name="activity_example_camera_is_opened">カメラ開きました</string>
+    <string name="activity_example_stream_create_failed">フローの作成に失敗します</string>
+    <string name="open_device">オープン装置</string>
+    <string name="stream_mode">ストリームモード:</string>
+    <string name="open_stream">オープンストリーム</string>
+    <string name="enable_algorithm">可能アルゴリズム</string>
+    <string name="capture_once_src">撮像一度src</string>
+    <string name="capture_once_dest">撮像一度dest</string>
+    <string name="continuous_capture">連続撮像</string>
+    <string name="stop_capture">止め捕捉</string>
+    <string name="verify">検証</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>そして</item>
+        <item>深さ</item>
+        <item>RGBD</item>
+        <item>RGBIRの</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

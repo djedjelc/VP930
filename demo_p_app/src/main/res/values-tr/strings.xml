@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Palmiye Örneği</string>
+    <string name="activity_example_model_copy_success">Model dosyası başarıyla kopyalandı.</string>
+    <string name="activity_example_camera_not_turn_on">Kamera açık değil</string>
+    <string name="activity_example_algo_not_init">Algoritma başlatılmadı</string>
+    <string name="activity_example_btn_compare">Karşılaştırma</string>
+    <string name="activity_example_btn_cancel">İptal</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath veya destPath Görüntü yolu boş olamaz!</string>
+    <string name="activity_example_no_image">RGB srcPath altında görüntü bulunamadı</string>
+    <string name="activity_example_extra_feature_failed">Görüntülerden özellik değerleri ayıklanamadı ve özellik değerleri karşılaştırılamadı</string>
+    <string name="activity_example_license_no_exist">Lisans dosyası mevcut değil</string>
+    <string name="activity_example_success">Başarılı</string>
+    <string name="activity_example_failure">Başarısız</string>
+    <string name="activity_example_algo_enable_first">Lütfen önce algoritmayı etkinleştirin!</string>
+    <string name="activity_example_stop_capture_failed">Yapışma durdurulamadı, ret:</string>
+    <string name="activity_example_stop_capture_success">Yapışmayı durdur komutu başarılı olur</string>
+    <string name="activity_example_capture_continuously_failed">Yakalama komutu devam ettirilemedi, ret:</string>
+    <string name="activity_example_capture_one_failed">Komut tutturulamadı, ret:</string>
+    <string name="activity_example_algo_already_enable">Algoritma etkinleştirildi!</string>
+    <string name="activity_example_initializing">Algoritma başlatılıyor!</string>
+    <string name="activity_example_btn_confirm">Emin misiniz</string>
+    <string name="activity_example_please_input_path">Lütfen tam yolu giriniz!</string>
+    <string name="activity_example_algo_enable_success">Algoritma başarıyı sağladı</string>
+    <string name="activity_example_algo_enable_failed">Algoritma etkinleştirilemezse, ret:</string>
+    <string name="activity_example_capture_timeout">Yakalama zaman aşımına uğradı</string>
+    <string name="activity_example_camera_is_opened">Kamera açık</string>
+    <string name="activity_example_stream_create_failed">Akış oluşturulamadı</string>
+    <string name="open_device">Cihazı aç</string>
+    <string name="stream_mode">Akış modu:</string>
+    <string name="open_stream">Akışı aç</string>
+    <string name="enable_algorithm">Algoritmayı etkinleştir</string>
+    <string name="capture_once_src">Bir kez yakala src</string>
+    <string name="capture_once_dest">Bir kez yakala dest</string>
+    <string name="continuous_capture">Sürekli yakalama</string>
+    <string name="stop_capture">Yakalamayı durdur</string>
+    <string name="verify">Doğrulamak</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>VE</item>
+        <item>DERİNLİK</item>
+        <item>RGBD (Türkçe)</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Tenyér minta</string>
+    <string name="activity_example_model_copy_success">A modellfájl másolása sikeresen megtörtént.</string>
+    <string name="activity_example_camera_not_turn_on">A kamera nincs bekapcsolva</string>
+    <string name="activity_example_algo_not_init">Az algoritmus nincs inicializálva</string>
+    <string name="activity_example_btn_compare">Összehasonlítás</string>
+    <string name="activity_example_btn_cancel">Érvénytelenít</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath vagy destPath A kép elérési útja nem lehet üres!</string>
+    <string name="activity_example_no_image">Nem található kép az RGB srcPath alatt</string>
+    <string name="activity_example_extra_feature_failed">Nem sikerült kinyerni a jellemzőértékeket a képekből, és a jellemzőértékeket nem lehetett összehasonlítani</string>
+    <string name="activity_example_license_no_exist">A licencfájl nem létezik</string>
+    <string name="activity_example_success">sikerül</string>
+    <string name="activity_example_failure">megbukik</string>
+    <string name="activity_example_algo_enable_first">Kérjük, először engedélyezze az algoritmust!</string>
+    <string name="activity_example_stop_capture_failed">Nem sikerült leállítani a pattintást, ret:</string>
+    <string name="activity_example_stop_capture_success">A stop snapping parancs sikeres</string>
+    <string name="activity_example_capture_continuously_failed">Nem sikerült megtartani a snapping parancsot, ret:</string>
+    <string name="activity_example_capture_one_failed">Nem sikerült bepattintani egy parancsot, ret:</string>
+    <string name="activity_example_algo_already_enable">Az algoritmus engedélyezve van!</string>
+    <string name="activity_example_initializing">Az algoritmus inicializálódik!</string>
+    <string name="activity_example_btn_confirm">Biztos vagy benne</string>
+    <string name="activity_example_please_input_path">Kérjük, adja meg a pontos útvonalat!</string>
+    <string name="activity_example_algo_enable_success">Az algoritmus lehetővé tette a sikert</string>
+    <string name="activity_example_algo_enable_failed">Ha az algoritmus nincs engedélyezve, ret:</string>
+    <string name="activity_example_capture_timeout">A rögzítés időtúllépése</string>
+    <string name="activity_example_camera_is_opened">A kamera be van kapcsolva</string>
+    <string name="activity_example_stream_create_failed">Nem sikerült létrehozni egy folyamatot</string>
+    <string name="open_device">Nyissa meg az eszközt</string>
+    <string name="stream_mode">Stream mód:</string>
+    <string name="open_stream">Nyílt adatfolyam</string>
+    <string name="enable_algorithm">Algoritmus engedélyezése</string>
+    <string name="capture_once_src">Rögzítse egyszer src</string>
+    <string name="capture_once_dest">Foglalj egyszer</string>
+    <string name="continuous_capture">Folyamatos rögzítés</string>
+    <string name="stop_capture">Rögzítés leállítása</string>
+    <string name="verify">Igazol</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>ÉS</item>
+        <item>MÉLYSÉG</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ตัวอย่างปาล์ม</string>
+    <string name="activity_example_model_copy_success">คัดลอกแฟ้มรุ่นสำเร็จแล้ว</string>
+    <string name="activity_example_camera_not_turn_on">ยังไม่ได้เปิดกล้อง</string>
+    <string name="activity_example_algo_not_init">อัลกอริทึมยังไม่ได้ทำงาน</string>
+    <string name="activity_example_btn_compare">เปรียบเทียบ</string>
+    <string name="activity_example_btn_cancel">ยกเลิก</string>
+    <string name="activity_example_image_path_is_empty">พาธของรูปภาพไม่สามารถว่า งได้!</string>
+    <string name="activity_example_no_image">ไม่พบรูปภาพภายใต้พาธของ rGB</string>
+    <string name="activity_example_extra_feature_failed">การดึงค่าคุณลักษณะจากภาพล้มเหลว และไม่สามารถเทียบกับค่าคุณสมบัติได้</string>
+    <string name="activity_example_license_no_exist">ไม่มีแฟ้มบัตรประจำตัวอยู่</string>
+    <string name="activity_example_success">สำเร็จ</string>
+    <string name="activity_example_failure">ล้มเหลว</string>
+    <string name="activity_example_algo_enable_first">กรุณาทำอัลกอริทึมก่อน!</string>
+    <string name="activity_example_stop_capture_failed">หยุดจับคำแนะนำล้มเหลวเคล็ดลับ:</string>
+    <string name="activity_example_stop_capture_success">หยุดการจับภาพสำเร็จ</string>
+    <string name="activity_example_capture_continuously_failed">คำสั่งให้จับอย่างต่อเนื่องล้มเหลวเคล็ดลับ:</string>
+    <string name="activity_example_capture_one_failed">การจับคู่คำแนะนำล้มเหลว:</string>
+    <string name="activity_example_algo_already_enable">อัลกอริทึมทำงาน!</string>
+    <string name="activity_example_initializing">อัลกอริทึมกำลังทำงาน!</string>
+    <string name="activity_example_btn_confirm">แน่ใจ</string>
+    <string name="activity_example_please_input_path">กรุณาใส่เส้นทางหลัก!</string>
+    <string name="activity_example_algo_enable_success">อัลกอริทึมทำงาน</string>
+    <string name="activity_example_algo_enable_failed">อัลกอริทึมทำให้ล้มเหลวเคล็ด:</string>
+    <string name="activity_example_capture_timeout">ช่วงเวลาการจับภาพ</string>
+    <string name="activity_example_camera_is_opened">เปิดกล้องแล้ว</string>
+    <string name="activity_example_stream_create_failed">การสร้างสายข้อมูลล้มเหลว</string>
+    <string name="open_device">เปิดอุปกรณ์</string>
+    <string name="stream_mode">โหมดสายข้อมูล:</string>
+    <string name="open_stream">เปิดสายข้อมูล</string>
+    <string name="enable_algorithm">เปิดใช้อัลกอริธึม</string>
+    <string name="capture_once_src">จับภาพได้ครั้งเดียว</string>
+    <string name="capture_once_dest">จับภาพได้ครั้งหนึ่ง</string>
+    <string name="continuous_capture">จับภาพต่อเนื่อง</string>
+    <string name="stop_capture">หยุดจับ</string>
+    <string name="verify">ตรวจสอบ</string>
+
+    <string-array name="stream_type">
+        <item>อาร์จีบี</item>
+        <item>และ</item>
+        <item>ความลึก</item>
+        <item>อาร์จีบีดี</item>
+        <item>อาร์จีบีร์</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

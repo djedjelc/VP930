@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zenty TPE</string>
+    
+    <!-- Main Menu -->
+    <string name="menu_enroll">Enrôler un client</string>
+    <string name="menu_payment">Effectuer un paiement</string>
+    <string name="menu_settings">Paramètres</string>
+    
+    <!-- Palm Activity -->
+    <string name="palm_title">Lecture de paume</string>
+    <string name="show_me_your_hand">Présentez votre paume</string>
+    <string name="place_palm">Placez votre paume face à la caméra</string>
+    <string name="enrollment_success">Enrôlement réussi</string>
+    <string name="enrollment_failed">Échec de l\'enrôlement</string>
+    <string name="identification_success">Identification réussie</string>
+    <string name="identification_failed">Identification échouée</string>
+    
+    <!-- Payment -->
+    <string name="amount_to_pay">Montant à payer : %s €</string>
+    <string name="payment_accepted">Paiement accepté</string>
+    <string name="payment_refused">Paiement refusé</string>
+    <string name="enter_amount">Saisissez le montant</string>
+    <string name="validate">Valider</string>
+    
+    <!-- Device -->
+    <string name="device_ready">Terminal prêt</string>
+    <string name="device_error">Erreur terminal</string>
+    <string name="device_disconnected">Terminal déconnecté</string>
+    <string name="device_connecting">Connexion au terminal...</string>
+    
+    <!-- QR Code -->
+    <string name="scan_qr_code">Scannez le QR code avec votre mobile</string>
+    <string name="waiting_validation">En attente de validation...</string>
+    <string name="session_expired">Session expirée</string>
+    
+    <!-- Errors -->
+    <string name="network_error">Erreur réseau</string>
+    <string name="api_error">Erreur serveur</string>
+    <string name="permission_denied">Permission refusée</string>
+</resources>

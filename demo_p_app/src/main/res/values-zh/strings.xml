@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Palm Sample</string>
+    <string name="activity_example_model_copy_success">The model file is copied successfully.</string>
+    <string name="activity_example_camera_not_turn_on">未打开相机</string>
+    <string name="activity_example_algo_not_init">算法未初始化</string>
+    <string name="activity_example_btn_compare">比对</string>
+    <string name="activity_example_btn_cancel">取消</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath or destPath 图片路径不能为空！</string>
+    <string name="activity_example_no_image">RGB srcPath的路径下未发现图片</string>
+    <string name="activity_example_extra_feature_failed">从图片中提取特征值失败,无法比对特征值</string>
+    <string name="activity_example_license_no_exist">license文件不存在</string>
+    <string name="activity_example_success">成功</string>
+    <string name="activity_example_failure">失败</string>
+    <string name="activity_example_algo_enable_first">请先使能算法！</string>
+    <string name="activity_example_stop_capture_failed">停止抓拍指令失败, ret:</string>
+    <string name="activity_example_stop_capture_success">停止抓拍指令成功</string>
+    <string name="activity_example_capture_continuously_failed">持续抓拍指令失败, ret:</string>
+    <string name="activity_example_capture_one_failed">抓拍一次指令失败, ret:</string>
+    <string name="activity_example_algo_already_enable">算法已使能!</string>
+    <string name="activity_example_initializing">算法正在初始化!</string>
+    <string name="activity_example_btn_confirm">确定</string>
+    <string name="activity_example_please_input_path">请输入确路径!</string>
+    <string name="activity_example_algo_enable_success">算法使能成功</string>
+    <string name="activity_example_algo_enable_failed">算法使能失败,ret:</string>
+    <string name="activity_example_capture_timeout">抓拍超时</string>
+    <string name="activity_example_camera_is_opened">相机已打开</string>
+    <string name="activity_example_stream_create_failed">创建流失败</string>
+    <string name="open_device">打开设备</string>
+    <string name="stream_mode">流模式：</string>
+    <string name="open_stream">启动流</string>
+    <string name="enable_algorithm">启用算法</string>
+    <string name="capture_once_src">抓拍一次 src</string>
+    <string name="capture_once_dest">抓拍一次 dest</string>
+    <string name="continuous_capture">连续抓拍</string>
+    <string name="stop_capture">停止抓拍</string>
+    <string name="verify">验证</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>IR</item>
+        <item>DEPTH</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

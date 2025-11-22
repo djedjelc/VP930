@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Mẫu cọ</string>
+    <string name="activity_example_model_copy_success">Tập tin mô hình được sao chép thành công.</string>
+    <string name="activity_example_camera_not_turn_on">Không bật máy ảnh</string>
+    <string name="activity_example_algo_not_init">Thuật toán chưa được khởi động</string>
+    <string name="activity_example_btn_compare">Tài khoản</string>
+    <string name="activity_example_btn_cancel">Hủy bỏ</string>
+    <string name="activity_example_image_path_is_empty">Đường dẫn hình ảnh RGB srcPath hoặc destPath không phải là rỗng!</string>
+    <string name="activity_example_no_image">Không có hình ảnh nào được tìm thấy trên đường dẫn RGB srcPath</string>
+    <string name="activity_example_extra_feature_failed">Lỗi chiết xuất các giá trị đặc điểm từ ảnh, không thể so sánh các giá trị đặc điểm</string>
+    <string name="activity_example_license_no_exist">Giấy phép không tồn tại</string>
+    <string name="activity_example_success">Thành công</string>
+    <string name="activity_example_failure">Thất bại</string>
+    <string name="activity_example_algo_enable_first">Hãy bắt đầu với thuật toán!</string>
+    <string name="activity_example_stop_capture_failed">Lệnh ngừng chụp không thành công, ret:</string>
+    <string name="activity_example_stop_capture_success">Lệnh ngừng chụp thành công</string>
+    <string name="activity_example_capture_continuously_failed">Lệnh bắt liên tục thất bại, ret:</string>
+    <string name="activity_example_capture_one_failed">Lệnh chụp một lần thất bại, ret:</string>
+    <string name="activity_example_algo_already_enable">Thuật toán đã hoạt động!</string>
+    <string name="activity_example_initializing">Thuật toán đang khởi động!</string>
+    <string name="activity_example_btn_confirm">Chắc chắn</string>
+    <string name="activity_example_please_input_path">Hãy nhập đường dẫn chính xác!</string>
+    <string name="activity_example_algo_enable_success">Thuật toán cho phép thành công</string>
+    <string name="activity_example_algo_enable_failed">Phép toán thất bại,ret:</string>
+    <string name="activity_example_capture_timeout">Chụp ảnh thời gian</string>
+    <string name="activity_example_camera_is_opened">Máy ảnh đã được bật</string>
+    <string name="activity_example_stream_create_failed">Lỗi tạo dòng</string>
+    <string name="open_device">Thiết bị mở</string>
+    <string name="stream_mode">Chế độ Stream:</string>
+    <string name="open_stream">Dòng mở</string>
+    <string name="enable_algorithm">Cho phép thuật toán</string>
+    <string name="capture_once_src">Bắt giữ SRC</string>
+    <string name="capture_once_dest">Bắt giữ một lần</string>
+    <string name="continuous_capture">Bắt giữ liên tục</string>
+    <string name="stop_capture">Đừng bắn!</string>
+    <string name="verify">Xác nhận</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>VÀ</item>
+        <item>Chiều sâu</item>
+        <item>Khu BẢO tàng.</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

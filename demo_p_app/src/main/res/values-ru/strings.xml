@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Образец для ладони</string>
+    <string name="activity_example_model_copy_success">Файл модели успешно копируется.</string>
+    <string name="activity_example_camera_not_turn_on">Камера не включена.</string>
+    <string name="activity_example_algo_not_init">Алгоритм не был начат</string>
+    <string name="activity_example_btn_compare">чем</string>
+    <string name="activity_example_btn_cancel">отмен</string>
+    <string name="activity_example_image_path_is_empty">Фото-маршрут RGB srcPath или destPath не может быть пустым!</string>
+    <string name="activity_example_no_image">Фото не было найдено под маршрутом RGB srcPath</string>
+    <string name="activity_example_extra_feature_failed">Отображение характеристических значений с изображений не удалось сопоставить с их значением</string>
+    <string name="activity_example_license_no_exist">Документов на лисенсе не существует</string>
+    <string name="activity_example_success">успешн</string>
+    <string name="activity_example_failure">неудач</string>
+    <string name="activity_example_algo_enable_first">Сначала алгоритм, пожалуйста!</string>
+    <string name="activity_example_stop_capture_failed">Команда \"прекратить захват\" провалилась.</string>
+    <string name="activity_example_stop_capture_success">Команда захвата выполнена</string>
+    <string name="activity_example_capture_continuously_failed">Инструкция по непрерывному захвату провалилась.</string>
+    <string name="activity_example_capture_one_failed">Один снимок не удался.</string>
+    <string name="activity_example_algo_already_enable">Алгоритм сделал это!</string>
+    <string name="activity_example_initializing">Алгоритм запускается!</string>
+    <string name="activity_example_btn_confirm">увер</string>
+    <string name="activity_example_please_input_path">Введите, пожалуйста!</string>
+    <string name="activity_example_algo_enable_success">Алгоритм позволяет работать</string>
+    <string name="activity_example_algo_enable_failed">Алгоритм делает возможным провал.</string>
+    <string name="activity_example_capture_timeout">Время пошло</string>
+    <string name="activity_example_camera_is_opened">Камера включена.</string>
+    <string name="activity_example_stream_create_failed">Провал в создании потока</string>
+    <string name="open_device">1. Открытое устройство</string>
+    <string name="stream_mode">Режим потока:</string>
+    <string name="open_stream">Открытый поток (Open stream)</string>
+    <string name="enable_algorithm">Включение алгоритма</string>
+    <string name="capture_once_src">Захват Один раз SRC</string>
+    <string name="capture_once_dest">Захват Один раз</string>
+    <string name="continuous_capture">Непрерывный сбор данных</string>
+    <string name="stop_capture">Стоп захват (Stop capture)</string>
+    <string name="verify">Проверка данных</string>
+
+    <string-array name="stream_type">
+        <item>RGB (RGB)</item>
+        <item>И</item>
+        <item>1. Глубина</item>
+        <item>РГБД (RGBD)</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

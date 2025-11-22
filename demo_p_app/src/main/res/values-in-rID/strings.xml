@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Sampel sawit</string>
+    <string name="activity_example_model_copy_success">Berkas modelnya telah disalin dengan sukses.</string>
+    <string name="activity_example_camera_not_turn_on">Tidak membuka kamera</string>
+    <string name="activity_example_algo_not_init">Algoritma tidak diinisialisasi</string>
+    <string name="activity_example_btn_compare">daripada</string>
+    <string name="activity_example_btn_cancel">batalkan</string>
+    <string name="activity_example_image_path_is_empty">Jalur foto RGB srcPath atau destPath tidak kosong!</string>
+    <string name="activity_example_no_image">Gambar tidak ditemukan di jalur srcPath RGB</string>
+    <string name="activity_example_extra_feature_failed">Mengekstrak nilai karakteristik dari gambar gagal, tidak bisa membandingkan nilai karakteristik</string>
+    <string name="activity_example_license_no_exist">Berkas license tidak ada</string>
+    <string name="activity_example_success">berhasil</string>
+    <string name="activity_example_failure">gagal</string>
+    <string name="activity_example_algo_enable_first">Aktifkan algoritma dulu!</string>
+    <string name="activity_example_stop_capture_failed">Ret:</string>
+    <string name="activity_example_stop_capture_success">Berhenti merekam perintah sukses</string>
+    <string name="activity_example_capture_continuously_failed">Ret:</string>
+    <string name="activity_example_capture_one_failed">Ret:</string>
+    <string name="activity_example_algo_already_enable">Algoritma membuatnya bertenaga!</string>
+    <string name="activity_example_initializing">Algoritma dimulai!</string>
+    <string name="activity_example_btn_confirm">yakin</string>
+    <string name="activity_example_please_input_path">Harap alamat yang jelas!</string>
+    <string name="activity_example_algo_enable_success">Algoritma membuatnya berhasil</string>
+    <string name="activity_example_algo_enable_failed">Tunggu, tunggu, tunggu.</string>
+    <string name="activity_example_capture_timeout">Ambil waktu istirahat</string>
+    <string name="activity_example_camera_is_opened">Kamera menyala</string>
+    <string name="activity_example_stream_create_failed">Gagal menciptakan arus</string>
+    <string name="open_device">Divais buka</string>
+    <string name="stream_mode">Mode arus:</string>
+    <string name="open_stream">Buka alirannya</string>
+    <string name="enable_algorithm">Aktifkan algoritma</string>
+    <string name="capture_once_src">Tangkap sekali SRC</string>
+    <string name="capture_once_dest">Menangkap sekali terbesarname</string>
+    <string name="continuous_capture">Penangkapan terus menerus</string>
+    <string name="stop_capture">Berhenti menangkap</string>
+    <string name="verify">verifikasi</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>DAN</item>
+        <item>kedalaman</item>
+        <item>rgbdname</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

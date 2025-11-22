@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Campione palmare</string>
+    <string name="activity_example_model_copy_success">Il file modello è copiato con successo.</string>
+    <string name="activity_example_camera_not_turn_on">Macchina fotografica non aperta</string>
+    <string name="activity_example_algo_not_init">Gli algoritmi non sono inizializzati</string>
+    <string name="activity_example_btn_compare">rispetto</string>
+    <string name="activity_example_btn_cancel">soppressione</string>
+    <string name="activity_example_image_path_is_empty">Il percorso path or destPath non deve rimanere vuoto!</string>
+    <string name="activity_example_no_image">Non sono ancora state trovate immagini sul cammino dell’rgb path</string>
+    <string name="activity_example_extra_feature_failed">I valori caratteristici che si ottengono dalla figura non sono comparabili</string>
+    <string name="activity_example_license_no_exist">Non esiste alcun documento di license</string>
+    <string name="activity_example_success">Il successo</string>
+    <string name="activity_example_failure">fallimento</string>
+    <string name="activity_example_algo_enable_first">Per favore, fate in primo luogo un algoritmo!</string>
+    <string name="activity_example_stop_capture_failed">La direttiva sulla battuta d’arresto è fallita, ret:</string>
+    <string name="activity_example_stop_capture_success">Basta con le istruzioni di colpo</string>
+    <string name="activity_example_capture_continuously_failed">La direttiva sulla cattura continua è fallita, ret:</string>
+    <string name="activity_example_capture_one_failed">La direttiva di colpo è fallita, ret:</string>
+    <string name="activity_example_algo_already_enable">L’algoritmo lo permette!</string>
+    <string name="activity_example_initializing">L’algoritmo si avvia!</string>
+    <string name="activity_example_btn_confirm">definire</string>
+    <string name="activity_example_please_input_path">Per favore, indichi un percorso sicuro!</string>
+    <string name="activity_example_algo_enable_success">Gli algoritmi permettono di avere successo</string>
+    <string name="activity_example_algo_enable_failed">Gli algoritmi permettono il fallimento,ret:</string>
+    <string name="activity_example_capture_timeout">Prendete il tempo</string>
+    <string name="activity_example_camera_is_opened">Apertura della macchina fotografica</string>
+    <string name="activity_example_stream_create_failed">Il fallimento del processo di creazione</string>
+    <string name="open_device">Apri dispositivo</string>
+    <string name="stream_mode">Modalità flusso:</string>
+    <string name="open_stream">Apri flusso</string>
+    <string name="enable_algorithm">Abilita algoritmo</string>
+    <string name="capture_once_src">Cattura una volta SRC</string>
+    <string name="capture_once_dest">Cattura una volta sola</string>
+    <string name="continuous_capture">Cattura continua</string>
+    <string name="stop_capture">Ferma cattura</string>
+    <string name="verify">verifica</string>
+
+    <string-array name="stream_type">
+        <item>RJF</item>
+        <item>E</item>
+        <item>profondità</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

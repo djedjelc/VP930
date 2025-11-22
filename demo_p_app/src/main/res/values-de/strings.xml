@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Handstil.</string>
+    <string name="activity_example_model_copy_success">Kopien der modelldatei sind erfolgreich.</string>
+    <string name="activity_example_camera_not_turn_on">[unklar]</string>
+    <string name="activity_example_algo_not_init">Der algorithmus hat nicht initialisiert</string>
+    <string name="activity_example_btn_compare">Auf trab.</string>
+    <string name="activity_example_btn_cancel">korrekt</string>
+    <string name="activity_example_image_path_is_empty">Ich spüre die ohrläppchen Von deinem ohrläppchen.</string>
+    <string name="activity_example_no_image">Die spuren Von srcPath zeigen kein bild</string>
+    <string name="activity_example_extra_feature_failed">Begriffe aus dem bild konnten nicht extrahiert werden; es war nicht möglich, sie zu vergleichen</string>
+    <string name="activity_example_license_no_exist">Die liga-datei gibt es nicht</string>
+    <string name="activity_example_success">Der erfolg</string>
+    <string name="activity_example_failure">Gescheitert.</string>
+    <string name="activity_example_algo_enable_first">Machen sie bitte den algorithmus!</string>
+    <string name="activity_example_stop_capture_failed">Mach nicht auf den job. Kofferraum:</string>
+    <string name="activity_example_stop_capture_success">Schnappten sie sich den befehl</string>
+    <string name="activity_example_capture_continuously_failed">Mach weiter den job nicht. Kofferraum:</string>
+    <string name="activity_example_capture_one_failed">Mach es mir nicht wie den tod..</string>
+    <string name="activity_example_algo_already_enable">Es ist der algorithmus.</string>
+    <string name="activity_example_initializing">Das algorithmen initialisiert.</string>
+    <string name="activity_example_btn_confirm">Könnten\?</string>
+    <string name="activity_example_please_input_path">Gib bitte den \"pfad\" ein!</string>
+    <string name="activity_example_algo_enable_success">Der algorithmus bringt erfolg</string>
+    <string name="activity_example_algo_enable_failed">Mach den kofferraum auf. Erst machen wir den test.</string>
+    <string name="activity_example_capture_timeout">Ja, er ist supercool</string>
+    <string name="activity_example_camera_is_opened">Kamera ist an.</string>
+    <string name="activity_example_stream_create_failed">Versager baut nicht ab.</string>
+    <string name="open_device">Schaltet die ausrüstung ein.</string>
+    <string name="stream_mode">Im schicke modus:</string>
+    <string name="open_stream">Den strom öffnen.</string>
+    <string name="enable_algorithm">Algorithmen entwickeln.</string>
+    <string name="capture_once_src">Fahren sie SRC ab</string>
+    <string name="capture_once_dest">Verhaftung nur einmal.</string>
+    <string name="continuous_capture">Serious filmmaterial!</string>
+    <string name="stop_capture">Fangen sie nicht mehr.</string>
+    <string name="verify">Authentifizierung.</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>UND</item>
+        <item>Die tiefe.</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

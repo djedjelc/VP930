@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">팜 표본</string>
+    <string name="activity_example_model_copy_success">모델 파일이 성공적으로 복사되었습니다.</string>
+    <string name="activity_example_camera_not_turn_on">카메라가 열리지 않음</string>
+    <string name="activity_example_algo_not_init">알고리즘은 초기화되지 않았습니다</string>
+    <string name="activity_example_btn_compare">보다</string>
+    <string name="activity_example_btn_cancel">취소</string>
+    <string name="activity_example_image_path_is_empty">rgb srcpath 또는 destpath 그림 경로는 비어 있을 수 없습니다!</string>
+    <string name="activity_example_no_image">rgb srcpath의 경로는 존재하지 않는다</string>
+    <string name="activity_example_extra_feature_failed">그림에서 고유값을 추출하는 데 실패했습니다. 고유값과 비교할 수 없습니다</string>
+    <string name="activity_example_license_no_exist">라이선스 파일이 존재하지 않습니다</string>
+    <string name="activity_example_success">성공</string>
+    <string name="activity_example_failure">실패</string>
+    <string name="activity_example_algo_enable_first">먼저 알고리즘을 사용하십시오!</string>
+    <string name="activity_example_stop_capture_failed">스냅샷 정지 실패, ret:</string>
+    <string name="activity_example_stop_capture_success">스냅샷 중지 명령을 성공적으로 중지했습니다</string>
+    <string name="activity_example_capture_continuously_failed">연속 캡처 실패, ret:</string>
+    <string name="activity_example_capture_one_failed">명령 스냅샷이 실패했습니다, ret:</string>
+    <string name="activity_example_algo_already_enable">알고리즘이 작동합니다!</string>
+    <string name="activity_example_initializing">알고리즘이 초기화 중입니다!</string>
+    <string name="activity_example_btn_confirm">확정</string>
+    <string name="activity_example_please_input_path">정확한 경로를 입력하십시오!</string>
+    <string name="activity_example_algo_enable_success">알고리즘이 성공할 수 있습니다</string>
+    <string name="activity_example_algo_enable_failed">알고리즘 사용 실패,ret:</string>
+    <string name="activity_example_capture_timeout">스냅샷 시간이 초과되었습니다</string>
+    <string name="activity_example_camera_is_opened">카메라가 켜져 있음</string>
+    <string name="activity_example_stream_create_failed">스트림 생성 실패</string>
+    <string name="open_device">열 장치</string>
+    <string name="stream_mode">스 트림 모드:</string>
+    <string name="open_stream">열 스 트림</string>
+    <string name="enable_algorithm">알고리즘을 사용</string>
+    <string name="capture_once_src">일단 src 캡처</string>
+    <string name="capture_once_dest">포획</string>
+    <string name="continuous_capture">연속 캡 처</string>
+    <string name="stop_capture">그만 캡 처</string>
+    <string name="verify">확인</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>그리고</item>
+        <item>깊이</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

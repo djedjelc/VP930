@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Vzorka dlane</string>
+    <string name="activity_example_model_copy_success">Súbor modelu sa úspešne skopíruje.</string>
+    <string name="activity_example_camera_not_turn_on">Fotoaparát nie je zapnutý</string>
+    <string name="activity_example_algo_not_init">Algoritmus nie je inicializovaný</string>
+    <string name="activity_example_btn_compare">Porovnanie</string>
+    <string name="activity_example_btn_cancel">Zrušiť</string>
+    <string name="activity_example_image_path_is_empty">RGB srcPath alebo destPath Cesta k obrázku nemôže byť prázdna!</string>
+    <string name="activity_example_no_image">Pod RGB srcPath sa nenašli žiadne obrázky</string>
+    <string name="activity_example_extra_feature_failed">Nepodarilo sa extrahovať hodnoty prvkov z obrázkov a hodnoty prvkov sa nepodarilo porovnať</string>
+    <string name="activity_example_license_no_exist">Licenčný súbor neexistuje</string>
+    <string name="activity_example_success">dosiahnuť</string>
+    <string name="activity_example_failure">zlyhať</string>
+    <string name="activity_example_algo_enable_first">Najprv povoľte algoritmus!</string>
+    <string name="activity_example_stop_capture_failed">Nepodarilo sa zastaviť prichytenie, ret:</string>
+    <string name="activity_example_stop_capture_success">Príkaz zastaviť prichytávanie je úspešný</string>
+    <string name="activity_example_capture_continuously_failed">Nepodarilo sa zachovať príkaz prichytenia, ret:</string>
+    <string name="activity_example_capture_one_failed">Ak sa nepodarí prichytiť príkaz, ret:</string>
+    <string name="activity_example_algo_already_enable">Algoritmus je povolený!</string>
+    <string name="activity_example_initializing">Algoritmus sa inicializuje!</string>
+    <string name="activity_example_btn_confirm">Si si istý</string>
+    <string name="activity_example_please_input_path">Zadajte presnú cestu!</string>
+    <string name="activity_example_algo_enable_success">Algoritmus umožnil úspech</string>
+    <string name="activity_example_algo_enable_failed">Ak sa algoritmus nepodarí povoliť, ret:</string>
+    <string name="activity_example_capture_timeout">Vypršal časový limit snímania</string>
+    <string name="activity_example_camera_is_opened">Fotoaparát je zapnutý</string>
+    <string name="activity_example_stream_create_failed">Nepodarilo sa vytvoriť postup</string>
+    <string name="open_device">Otvorte zariadenie</string>
+    <string name="stream_mode">Režim streamu:</string>
+    <string name="open_stream">Otvorený stream</string>
+    <string name="enable_algorithm">Povoliť algoritmus</string>
+    <string name="capture_once_src">Zachyťte raz SRC</string>
+    <string name="capture_once_dest">Zachytiť raz dest</string>
+    <string name="continuous_capture">Nepretržité snímanie</string>
+    <string name="stop_capture">Zastavenie snímania</string>
+    <string name="verify">Overiť</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>A</item>
+        <item>HĹBKA</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

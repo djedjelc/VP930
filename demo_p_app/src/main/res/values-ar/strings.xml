@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">عينة نخيل</string>
+    <string name="activity_example_model_copy_success">يتم نسخ ملف النموذج بنجاح.</string>
+    <string name="activity_example_camera_not_turn_on">لم تقم بتشغيل الكاميرا</string>
+    <string name="activity_example_algo_not_init">الخوارزمية لا تبدأ</string>
+    <string name="activity_example_btn_compare">المقارنة</string>
+    <string name="activity_example_btn_cancel">إلغاء</string>
+    <string name="activity_example_image_path_is_empty">RGB SrcPath أو DestStath مسارات الصورة لا يمكن أن تكون فارغة!</string>
+    <string name="activity_example_no_image">لم يتم العثور على صور تحت مسار RGB SrcPath</string>
+    <string name="activity_example_extra_feature_failed">فشل استخراج قيمة خصائص من صورة</string>
+    <string name="activity_example_license_no_exist">ملف License غير موجود</string>
+    <string name="activity_example_success">النجاح</string>
+    <string name="activity_example_failure">فشل</string>
+    <string name="activity_example_algo_enable_first">خوارزمية الطاقة أولاً</string>
+    <string name="activity_example_stop_capture_failed">فشل إيقاف الإمساك، RET:</string>
+    <string name="activity_example_stop_capture_success">تم إيقاف الإيقاف بنجاح</string>
+    <string name="activity_example_capture_continuously_failed">فشل أوامر الإمساك المستمر، RET:</string>
+    <string name="activity_example_capture_one_failed">فشل عملية الإمساك</string>
+    <string name="activity_example_algo_already_enable">الخوارزمية تعمل</string>
+    <string name="activity_example_initializing">الخوارزمية تبدأ!</string>
+    <string name="activity_example_btn_confirm">تحديد</string>
+    <string name="activity_example_please_input_path">يرجى إدخال المسار الصحيح!</string>
+    <string name="activity_example_algo_enable_success">الخوارزمية ستنجح</string>
+    <string name="activity_example_algo_enable_failed">الخوارزمية ستفشل</string>
+    <string name="activity_example_capture_timeout">وقت الامساك</string>
+    <string name="activity_example_camera_is_opened">الكاميرا مفتوحة</string>
+    <string name="activity_example_stream_create_failed">فشل إنشاء التدفق</string>
+    <string name="open_device">افتح الجهاز</string>
+    <string name="stream_mode">وضع التدفق</string>
+    <string name="open_stream">تدفق مفتوح</string>
+    <string name="enable_algorithm">تمكين الخوارزمية</string>
+    <string name="capture_once_src"><![CDATA[أسر مرة واحدة <img src=]]></string>
+    <string name="capture_once_dest">التقاط مرة واحدة</string>
+    <string name="continuous_capture">أسر مستمر</string>
+    <string name="stop_capture">إيقاف الالتقاط</string>
+    <string name="verify">التحقق</string>
+
+    <string-array name="stream_type">
+        <item>RGB</item>
+        <item>و</item>
+        <item>العمق</item>
+        <item>البرنامج العالمي للتخفيف من حدة الفقر</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

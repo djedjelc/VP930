@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Échantillon de palme</string>
+    <string name="activity_example_model_copy_success">Le fichier de modèle est copié avec succès.</string>
+    <string name="activity_example_camera_not_turn_on">Ne pas ouvrir la caméra</string>
+    <string name="activity_example_algo_not_init">Algorithme non initialisé</string>
+    <string name="activity_example_btn_compare">plus</string>
+    <string name="activity_example_btn_cancel">La suppression des</string>
+    <string name="activity_example_image_path_is_empty">Le chemin de l’image RGB srcPath ou destPath ne peut pas être vide!</string>
+    <string name="activity_example_no_image">Aucune image trouvée sous le chemin de RGB srcPath</string>
+    <string name="activity_example_extra_feature_failed">Impossible d’aligner les valeurs propres en extrayant les valeurs propres des images</string>
+    <string name="activity_example_license_no_exist">Le fichier de licence n’existe pas</string>
+    <string name="activity_example_success">Le succès</string>
+    <string name="activity_example_failure">l’échec</string>
+    <string name="activity_example_algo_enable_first">S’il vous plaît activer l’algorithme d’abord!</string>
+    <string name="activity_example_stop_capture_failed">L’instruction stop grab a échoué, ret:</string>
+    <string name="activity_example_stop_capture_success">Ordre stop capture réussi</string>
+    <string name="activity_example_capture_continuously_failed">L’instruction de capture continue a échoué, ret:</string>
+    <string name="activity_example_capture_one_failed">Une instruction de capture échoue, ret:</string>
+    <string name="activity_example_algo_already_enable">L’algorithme a permis!</string>
+    <string name="activity_example_initializing">L’algorithme est initialisé!</string>
+    <string name="activity_example_btn_confirm">déterminer</string>
+    <string name="activity_example_please_input_path">Veuillez entrer le chemin exact!</string>
+    <string name="activity_example_algo_enable_success">L’algorithme permet le succès</string>
+    <string name="activity_example_algo_enable_failed">L’algorithme permet d’échouer,ret:</string>
+    <string name="activity_example_capture_timeout">Délai de capture expiré</string>
+    <string name="activity_example_camera_is_opened">La caméra est allumée</string>
+    <string name="activity_example_stream_create_failed">Échec de la création d’un flux</string>
+    <string name="open_device">Ouvrir le dispositif</string>
+    <string name="stream_mode">Mode de flux:</string>
+    <string name="open_stream">Flux ouvert</string>
+    <string name="enable_algorithm">Activer l’algorithme</string>
+    <string name="capture_once_src">Capture une fois SRC</string>
+    <string name="capture_once_dest">Capturer une fois dest</string>
+    <string name="continuous_capture">Capture continue</string>
+    <string name="stop_capture">Arrêter la capture</string>
+    <string name="verify">vérifier</string>
+
+    <string-array name="stream_type">
+        <item>RVB</item>
+        <item>ET</item>
+        <item>La profondeur</item>
+        <item>RGBD</item>
+        <item>RGBIR</item>
+        <item>RGBD_IR</item>
+        <item>DEPTH_IR</item>
+    </string-array>
+</resources>

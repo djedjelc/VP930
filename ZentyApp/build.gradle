@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion '30.0.1'
+    namespace 'com.zenty.tpe'
+
+    defaultConfig {
+        applicationId "com.zenty.tpe"
+        minSdkVersion 26
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0.0"
+        
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a"
+        }
+    }
+
+    signingConfigs {
+        release {
+            // TODO: Add your signing config
+            storeFile file('zenty.jks')
+            storePassword 'zenty123'
+            keyAlias 'zentyKey'
+            keyPassword 'zenty123'
+        }
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            // signingConfig signingConfigs.release  // Commented out - keystore not needed for now
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            // No signing config needed for debug builds
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
+    // Android dependencies
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Palm SDK Common module (OpenGL rendering)
+    implementation project(':common')
+    
+    // Permissions
+    implementation 'com.github.getActivity:XXPermissions:20.0'
+    
+    // HTTP Client
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    
+    // JSON Parser
+    implementation 'com.google.code.gson:gson:2.10.1'
+    
+    // QR Code Generator
+    implementation 'com.google.zxing:core:3.5.2'
+}
