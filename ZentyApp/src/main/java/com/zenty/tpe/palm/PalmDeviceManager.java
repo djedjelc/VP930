@@ -46,7 +46,10 @@ public class PalmDeviceManager {
             public void onDeviceCreatedSuccess(IDevice device, int deviceIndex, 
                                               Map<Long, IDevice> runningDevice, 
                                               UsbMapTable.DeviceType deviceType) {
-                Log.i(TAG, "Device created: " + deviceType + ", index: " + deviceIndex);
+                String msg = "Device created: " + deviceType + ", index: " + deviceIndex;
+                Log.i(TAG, msg);
+                com.zenty.tpe.utils.FileLogger.log(TAG, msg);
+                
                 PalmDeviceManager.this.device = device;
                 if (deviceStateCallback != null) {
                     deviceStateCallback.onDeviceCreated();
@@ -55,7 +58,10 @@ public class PalmDeviceManager {
 
             @Override
             public void onDeviceCreateFailed(IDevice device) {
-                Log.e(TAG, "Device creation failed");
+                String msg = "Device creation failed";
+                Log.e(TAG, msg);
+                com.zenty.tpe.utils.FileLogger.log(TAG, msg);
+                
                 if (deviceStateCallback != null) {
                     deviceStateCallback.onDeviceError("Échec de création du device");
                 }
@@ -63,7 +69,10 @@ public class PalmDeviceManager {
 
             @Override
             public void onDeviceDestroy(IDevice device) {
-                Log.i(TAG, "Device destroyed");
+                String msg = "Device destroyed";
+                Log.i(TAG, msg);
+                com.zenty.tpe.utils.FileLogger.log(TAG, msg);
+                
                 PalmDeviceManager.this.device = null;
                 isDeviceOpen = false;
                 isAlgorithmEnabled = false;
@@ -75,11 +84,14 @@ public class PalmDeviceManager {
             @Override
             public void onDevicePermissionGranted(DtUsbDevice dtUsbDevice) {
                 Log.d(TAG, "USB permission granted");
+                com.zenty.tpe.utils.FileLogger.log(TAG, "USB permission granted");
             }
 
             @Override
             public void onDevicePermissionDenied(DtUsbDevice dtUsbDevice) {
                 Log.e(TAG, "USB permission denied");
+                com.zenty.tpe.utils.FileLogger.log(TAG, "USB permission denied");
+                
                 if (deviceStateCallback != null) {
                     deviceStateCallback.onDeviceError("Permission USB refusée");
                 }
@@ -88,6 +100,8 @@ public class PalmDeviceManager {
             @Override
             public void onAttached(DtUsbDevice dtUsbDevice) {
                 Log.i(TAG, "Device attached");
+                com.zenty.tpe.utils.FileLogger.log(TAG, "Device attached: " + (dtUsbDevice != null ? dtUsbDevice.getDeviceName() : "null"));
+                
                 if (deviceStateCallback != null) {
                     deviceStateCallback.onDeviceAttached();
                 }
@@ -96,6 +110,8 @@ public class PalmDeviceManager {
             @Override
             public void onDetached(DtUsbDevice dtUsbDevice) {
                 Log.i(TAG, "Device detached");
+                com.zenty.tpe.utils.FileLogger.log(TAG, "Device detached");
+                
                 isDeviceOpen = false;
                 isAlgorithmEnabled = false;
                 if (deviceStateCallback != null) {

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String MODEL_DIR = Environment.getExternalStorageDirectory() + File.separator + "ZentyModels";
     
     private TextView tvDeviceStatus;
-    private Button btnEnroll, btnPayment;
+    private Button btnEnroll, btnPayment, btnViewLogs;
     private PalmDeviceManager palmManager;
     
     @Override
@@ -41,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         tvDeviceStatus = findViewById(R.id.tv_device_status);
         btnEnroll = findViewById(R.id.btn_enroll);
         btnPayment = findViewById(R.id.btn_payment);
+        
+        // Bouton temporaire pour voir les logs (à ajouter dans le layout ou créer dynamiquement)
+        // Pour simplifier sans modifier le XML, on va ajouter un bouton programmatiquement si possible
+        // ou utiliser un des boutons existants avec un long click
+        
+        btnEnroll.setOnLongClickListener(v -> {
+            showLogs();
+            return true;
+        });
         
         checkPermissions();
     }
@@ -186,6 +195,30 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     
+    private void showLogs() {
+        String logs = com.zenty.tpe.utils.FileLogger.getLogContent();
+        
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
+        builder.setTitle("Crash Logs");
+        
+        // Scroll view pour les logs longs
+        android.widget.ScrollView scrollView = new android.widget.ScrollView(this);
+        TextView tvLogs = new TextView(this);
+        tvLogs.setText(logs);
+        tvLogs.setPadding(20, 20, 20, 20);
+        tvLogs.setTextIsSelectable(true);
+        scrollView.addView(tvLogs);
+        
+        builder.setView(scrollView);
+        builder.setPositiveButton("Fermer", null);
+        builder.setNeutralButton("Effacer", (dialog, which) -> {
+            com.zenty.tpe.utils.FileLogger.clearLogs();
+            Toast.makeText(this, "Logs effacés", Toast.LENGTH_SHORT).show();
+        });
+        
+        builder.show();
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
