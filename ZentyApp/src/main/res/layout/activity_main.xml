@@ -44,4 +44,14 @@
         android:padding="16dp"
         android:enabled="false" />
 
+    <Button
+        android:id="@+id/btn_view_logs"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Voir les logs de crash"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#666666" />
+
 </LinearLayout>

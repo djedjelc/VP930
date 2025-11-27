@@ -100,7 +100,7 @@ public class PalmDeviceManager {
             @Override
             public void onAttached(DtUsbDevice dtUsbDevice) {
                 Log.i(TAG, "Device attached");
-                com.zenty.tpe.utils.FileLogger.log(TAG, "Device attached: " + (dtUsbDevice != null ? dtUsbDevice.getDeviceName() : "null"));
+                com.zenty.tpe.utils.FileLogger.log(TAG, "Device attached: " + (dtUsbDevice != null ? dtUsbDevice.toString() : "null"));
                 
                 if (deviceStateCallback != null) {
                     deviceStateCallback.onDeviceAttached();

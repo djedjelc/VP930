@@ -41,15 +41,10 @@ public class MainActivity extends AppCompatActivity {
         tvDeviceStatus = findViewById(R.id.tv_device_status);
         btnEnroll = findViewById(R.id.btn_enroll);
         btnPayment = findViewById(R.id.btn_payment);
+        btnViewLogs = findViewById(R.id.btn_view_logs);
         
-        // Bouton temporaire pour voir les logs (à ajouter dans le layout ou créer dynamiquement)
-        // Pour simplifier sans modifier le XML, on va ajouter un bouton programmatiquement si possible
-        // ou utiliser un des boutons existants avec un long click
-        
-        btnEnroll.setOnLongClickListener(v -> {
-            showLogs();
-            return true;
-        });
+        // Bouton pour voir les logs
+        btnViewLogs.setOnClickListener(v -> showLogs());
         
         checkPermissions();
     }
