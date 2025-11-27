@@ -26,6 +26,12 @@ public class PalmDeviceManager {
     private boolean isAlgorithmEnabled = false;
     private DeviceStateCallback deviceStateCallback;
     
+    // Threading pour les opérations device
+    private final java.util.concurrent.ExecutorService singleThreadExecutor = 
+        java.util.concurrent.Executors.newSingleThreadExecutor();
+    private final android.os.Handler mainHandler = 
+        new android.os.Handler(android.os.Looper.getMainLooper());
+    
     private PalmDeviceManager() {}
     
     public static synchronized PalmDeviceManager getInstance() {
@@ -51,9 +57,14 @@ public class PalmDeviceManager {
                 com.zenty.tpe.utils.FileLogger.log(TAG, msg);
                 
                 PalmDeviceManager.this.device = device;
-                if (deviceStateCallback != null) {
-                    deviceStateCallback.onDeviceCreated();
-                }
+                
+                // IMPORTANT: Ouvrir le device dans un thread en arrière-plan
+                // comme dans le projet qui fonctionne (VP930Pro-main)
+                singleThreadExecutor.execute(() -> {
+                    if (deviceStateCallback != null) {
+                        mainHandler.post(() -> deviceStateCallback.onDeviceCreated());
+                    }
+                });
             }
 
             @Override
@@ -127,45 +138,54 @@ public class PalmDeviceManager {
     public void openDevice(final OpenCallback callback) {
         if (device == null) {
             Log.e(TAG, "Device not created yet");
+            com.zenty.tpe.utils.FileLogger.log(TAG, "openDevice: Device not created yet");
             if (callback != null) {
-                callback.onOpenFailed("Device non initialisé");
+                mainHandler.post(() -> callback.onOpenFailed("Device non initialisé"));
             }
             return;
         }
         
-        device.open(new IOpenCallback() {
-            @Override
-            public void onDownloadPrepare() {
-                Log.d(TAG, "Download prepare");
-            }
-
-            @Override
-            public void onDownloadProgress(int progress) {
-                Log.d(TAG, "Download progress: " + progress);
-            }
-
-            @Override
-            public void onDownloadSuccess() {
-                Log.d(TAG, "Download success");
-            }
-
-            @Override
-            public void onOpenSuccess() {
-                Log.i(TAG, "Device opened successfully");
-                isDeviceOpen = true;
-                if (callback != null) {
-                    callback.onOpenSuccess();
+        com.zenty.tpe.utils.FileLogger.log(TAG, "Opening device in background thread...");
+        
+        // Ouvrir le device dans un thread en arrière-plan
+        singleThreadExecutor.execute(() -> {
+            device.open(new IOpenCallback() {
+                @Override
+                public void onDownloadPrepare() {
+                    Log.d(TAG, "Download prepare");
                 }
-            }
 
-            @Override
-            public void onOpenFail(int errorCode) {
-                Log.e(TAG, "Device open failed: " + errorCode);
-                isDeviceOpen = false;
-                if (callback != null) {
-                    callback.onOpenFailed("Erreur: " + Integer.toHexString(errorCode));
+                @Override
+                public void onDownloadProgress(int progress) {
+                    Log.d(TAG, "Download progress: " + progress);
                 }
-            }
+
+                @Override
+                public void onDownloadSuccess() {
+                    Log.d(TAG, "Download success");
+                }
+
+                @Override
+                public void onOpenSuccess() {
+                    Log.i(TAG, "Device opened successfully");
+                    com.zenty.tpe.utils.FileLogger.log(TAG, "Device opened successfully");
+                    isDeviceOpen = true;
+                    if (callback != null) {
+                        mainHandler.post(() -> callback.onOpenSuccess());
+                    }
+                }
+
+                @Override
+                public void onOpenFail(int errorCode) {
+                    String errorMsg = "Device open failed: " + Integer.toHexString(errorCode);
+                    Log.e(TAG, errorMsg);
+                    com.zenty.tpe.utils.FileLogger.log(TAG, errorMsg);
+                    isDeviceOpen = false;
+                    if (callback != null) {
+                        mainHandler.post(() -> callback.onOpenFailed("Erreur: " + Integer.toHexString(errorCode)));
+                    }
+                }
+            });
         });
     }
     
